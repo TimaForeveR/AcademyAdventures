@@ -1,0 +1,47 @@
+local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
+
+local Window = OrionLib:MakeWindow({Name = "TimaForeveR | Academy Adventures 3"})
+
+local Tab = Window:MakeTab({
+  Name = "Main",
+  Icon = "rbxassetid://4483345998"
+})
+
+Tab:AddButton({
+  Name = "Tp to NPC (Take or pass a quest)",
+  Callback = function()  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-93.91905212402344, 80.91161346435547, 208.96279907226562)
+end
+})
+
+Tab:AddButton({
+  Name = "Auto Quest",
+  Callback = function()
+local character = game.Players.LocalPlayer.Character
+local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+
+wait(1)
+humanoidRootPart.CFrame = CFrame.new(61.32961654663086, 40.46106719970703, 91.11062622070312)
+
+wait(1)
+humanoidRootPart.CFrame = CFrame.new(4.217462062835693, 40.46106719970703, 146.6785888671875)
+
+wait(1)
+humanoidRootPart.CFrame = CFrame.new(138.93919372558594, 26.701217651367188, 135.41978454589844)
+
+wait(1)
+humanoidRootPart.CFrame = CFrame.new(-133.106689453125, 40.45348358154297, 149.45849609375)
+
+wait(1)
+humanoidRootPart.CFrame = CFrame.new(-135.67425537109375, 40.873706817626953, 245.87620544433594)
+
+wait(1)
+humanoidRootPart.CFrame = CFrame.new(106.64983367919922, 40.374897003173828, 247.2201385498047)
+end
+})
+
+Tab:AddButton({
+  Name = "Tp to Portal",
+  Callback = function() 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-102.96319580078125, -0.34691619873046875, 350.34747314453125)
+end
+})
